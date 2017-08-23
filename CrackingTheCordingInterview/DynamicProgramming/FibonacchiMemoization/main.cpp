@@ -2,6 +2,7 @@
 *  FibonacchiMemoization
 *
 *  Find nth fibonacchi number using Memoization
+*  (Memoization is a technique for improving the performance of recursive algorithm)
 *
 *  approach:
 *  crate a lookup map
