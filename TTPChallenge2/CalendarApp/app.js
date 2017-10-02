@@ -3,7 +3,9 @@ var express    = require("express"),
     mongoose   = require("mongoose"),
     bodyParser = require("body-parser");
 
-mongoose.connect("mongodb://localhost/calendar_app");
+//mongoose.connect("mongodb://localhost/calendar_app");
+mongoose.connect("mongodb://risa:risa@ds157584.mlab.com:57584/calendarapp");
+
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));   //link to public directory
 app.use(bodyParser.urlencoded({extended: true}));
@@ -50,6 +52,6 @@ app.get("/events/:id", function(req, res) {
   res.render("eventform");
 });
 
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 7000, function(){
   console.log("server has started...")
 });
