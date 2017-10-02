@@ -1,0 +1,26 @@
+.square {
+  height: 100px;
+
+}
+
+.table {
+  table-layout: fixed;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  width: 15%;
+}
+
+div .alert {
+  padding: 0;
+  margin: 3px;
+  line-height: normal;
+}
+div .alert p{
+  font-size: 15px;
+
+}
